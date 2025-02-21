@@ -8,12 +8,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-    res.send("Contact us at abc@gmail.com");
+    res.send("<h1>Contact us</h1><p> Contact us at abc@gmail.com </p>");
     console.log(req.rawHeaders);
 });
 
 app.get("/about", (req, res) => {
-    res.send("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus consectetur elit, vitae fringilla lorem aliquet non. Sed porttitor fermentum tincidunt. ");
+    res.send("<h1>About me</h1><p>Hello! My name is Manvi Sharma. I live in Vancouver. </p>");
     console.log(req.rawHeaders);
 });
 
