@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-    res.send("HTTP Request is successful.");
+    res.send("<h1>HTTP Request is successful.</h1>");
     console.log(req.rawHeaders);
 });
 
